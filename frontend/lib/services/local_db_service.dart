@@ -17,7 +17,7 @@ class LocalDbService {
       path,
       version: 1,
       onCreate: (db, version) async {
-        await db.execute('''
+        await db.execute(''' 
           CREATE TABLE IF NOT EXISTS instruments (
             id TEXT PRIMARY KEY,
             instrument_id TEXT,
